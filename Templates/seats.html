@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1> Welcome to Pet Jett!</h1>
+<h2> Seat Selection</h2>
+
+<form action =" " method = "POST" novalidate>
+    {{form.hidden_tag()}}
+    <p>{{form.seat.label}}
+        {{form.seat(size=3)}}
+    </p>
+
+    <p>{{form.submit()}}
+    </p>
+    <img src="https://developers.amadeus.com/PAS-EAS/api/v1/cms-gateway/sites/default/files/inline-images/React-seat-map_wings.png" width="800" height="1000">
+
+    <p></p>
+    <p></p>
+</form>
+{% endblock %}

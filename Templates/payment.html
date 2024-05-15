@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1> Welcome to Pet Jett!</h1>
+<h2> Payment Form</h2>
+<form action =" " method = "POST" novalidate>
+    {{form.hidden_tag()}}
+    <p>{{form.total.label}}
+       {{form.total(size=5)}}
+
+    <p>{{form.card_number.label}}
+        {{form.card_number(size=15)}}
+    </p>
+    <p>{{form.exp_yr.label}}
+        {{form.exp_yr(size=4)}}
+    </p>
+    <p>{{form.cvv.label}}
+        {{form.cvv(size=3)}}
+    </p>
+    <p>{{form.submit()}}
+    </p>
+    <p></p>
+    <p></p>
+</form>
+{% endblock %}
